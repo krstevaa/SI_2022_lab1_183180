@@ -1,5 +1,5 @@
 lemon x 2
-asparagus x 6
+asparagus x 7
 watermelon x 8
 avocado x 2
 fish x 10
