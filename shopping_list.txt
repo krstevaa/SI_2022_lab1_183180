@@ -1,5 +1,5 @@
-lemon
-asparagus
-watermelon
-avocado
-fish
+lemon x 2
+asparagus x 6
+watermelon x 8
+avocado x 2
+fish x 10
