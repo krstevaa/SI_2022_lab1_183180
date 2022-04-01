@@ -1,5 +1,10 @@
 lemon x 2
 asparagus x 7
 watermelon x 8
+<<<<<<< HEAD
 avocado x 2
 fish x 5
+avocado x 27
+fish x 10
+coconut x 4
+>>>>>>> branch2
