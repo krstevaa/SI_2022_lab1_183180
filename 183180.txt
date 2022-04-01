@@ -1,0 +1,350 @@
+
+Ivona@Ivona-BD7DFK2 MINGW64 ~
+$ cd Desktop
+
+Ivona@Ivona-BD7DFK2 MINGW64 ~/Desktop
+$ git clone https://github.com/krstevaa/SI_2022_lab1_183180.git
+Cloning into 'SI_2022_lab1_183180'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (6/6), done.
+
+Ivona@Ivona-BD7DFK2 MINGW64 ~/Desktop
+$ cd SI_2022_lab1_183180
+
+Ivona@Ivona-BD7DFK2 MINGW64 ~/Desktop/SI_2022_lab1_183180 (master)
+$ ls
+README.md
+
+Ivona@Ivona-BD7DFK2 MINGW64 ~/Desktop/SI_2022_lab1_183180 (master)
+$ touch shopping_list.txt
+
+Ivona@Ivona-BD7DFK2 MINGW64 ~/Desktop/SI_2022_lab1_183180 (master)
+$ ls
+README.md  shopping_list.txt
+
+Ivona@Ivona-BD7DFK2 MINGW64 ~/Desktop/SI_2022_lab1_183180 (master)
+$ git add .
+
+Ivona@Ivona-BD7DFK2 MINGW64 ~/Desktop/SI_2022_lab1_183180 (master)
+$ git commit -m 'Add 5 items to the shopping list'
+[master 7539b38] Add 5 items to the shopping list
+ 1 file changed, 5 insertions(+)
+ create mode 100644 shopping_list.txt
+
+Ivona@Ivona-BD7DFK2 MINGW64 ~/Desktop/SI_2022_lab1_183180 (master)
+$ git add .
+
+Ivona@Ivona-BD7DFK2 MINGW64 ~/Desktop/SI_2022_lab1_183180 (master)
+$ git commit -m 'Add quantities to the items.'
+[master 9796e23] Add quantities to the items.
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+
+Ivona@Ivona-BD7DFK2 MINGW64 ~/Desktop/SI_2022_lab1_183180 (master)
+$ git branch branch1
+
+Ivona@Ivona-BD7DFK2 MINGW64 ~/Desktop/SI_2022_lab1_183180 (master)
+$ git branch branch2
+
+Ivona@Ivona-BD7DFK2 MINGW64 ~/Desktop/SI_2022_lab1_183180 (master)
+$ git push -u origin master
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 662 bytes | 331.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/krstevaa/SI_2022_lab1_183180.git
+   732ce3f..9796e23  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+Ivona@Ivona-BD7DFK2 MINGW64 ~/Desktop/SI_2022_lab1_183180 (master)
+$ git checkout branch1
+Switched to branch 'branch1'
+
+Ivona@Ivona-BD7DFK2 MINGW64 ~/Desktop/SI_2022_lab1_183180 (branch1)
+$ git push -u origin branch1
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'branch1' on GitHub by visiting:
+remote:      https://github.com/krstevaa/SI_2022_lab1_183180/pull/new/branch1
+remote:
+To https://github.com/krstevaa/SI_2022_lab1_183180.git
+ * [new branch]      branch1 -> branch1
+Branch 'branch1' set up to track remote branch 'branch1' from 'origin'.
+
+Ivona@Ivona-BD7DFK2 MINGW64 ~/Desktop/SI_2022_lab1_183180 (branch1)
+$ git checkout branch2
+Switched to branch 'branch2'
+
+Ivona@Ivona-BD7DFK2 MINGW64 ~/Desktop/SI_2022_lab1_183180 (branch2)
+$ git push -u origin branch2
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'branch2' on GitHub by visiting:
+remote:      https://github.com/krstevaa/SI_2022_lab1_183180/pull/new/branch2
+remote:
+To https://github.com/krstevaa/SI_2022_lab1_183180.git
+ * [new branch]      branch2 -> branch2
+Branch 'branch2' set up to track remote branch 'branch2' from 'origin'.
+
+Ivona@Ivona-BD7DFK2 MINGW64 ~/Desktop/SI_2022_lab1_183180 (branch2)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+Ivona@Ivona-BD7DFK2 MINGW64 ~/Desktop/SI_2022_lab1_183180 (master)
+$ git log
+commit 9796e232d925f8912ab8ca89e87f17c563a9ac3a (HEAD -> master, origin/master, branch1, origin/HEAD, branch2, branch1)
+Author: Ivona Krsteva <krstevaaivona@yahoo.com>
+Date:   Fri Apr 1 18:21:23 2022 +0200
+
+    Add quantities to the items.
+
+commit 7539b38880634a24c0d1ee6a2cfb8d813f1d8e60
+Author: Ivona Krsteva <krstevaaivona@yahoo.com>
+Date:   Fri Apr 1 18:20:43 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 732ce3f94ae09490db41fa553eb1385662c248a3
+Author: krstevaa <82337314+krstevaa@users.noreply.github.com>
+Date:   Fri Apr 1 18:18:58 2022 +0200
+
+    Initial commit
+
+commit b52035b94c2690e5b34e3243df46a68f7da79bbe
+Author: krstevaa <82337314+krstevaa@users.noreply.github.com>
+Date:   Fri Apr 1 18:18:42 2022 +0200
+
+    Initial commit
+
+Ivona@Ivona-BD7DFK2 MINGW64 ~/Desktop/SI_2022_lab1_183180 (master)
+$ git checkout branch1
+Switched to branch 'branch1'
+Your branch is up to date with 'origin/branch1'.
+
+Ivona@Ivona-BD7DFK2 MINGW64 ~/Desktop/SI_2022_lab1_183180 (branch1)
+$ git add .
+
+Ivona@Ivona-BD7DFK2 MINGW64 ~/Desktop/SI_2022_lab1_183180 (branch1)
+$ git commit -m 'Change quantity of item #5'
+[branch1 8a60183] Change quantity of item #5
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Ivona@Ivona-BD7DFK2 MINGW64 ~/Desktop/SI_2022_lab1_183180 (branch1)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+Ivona@Ivona-BD7DFK2 MINGW64 ~/Desktop/SI_2022_lab1_183180 (master)
+$ git add .
+
+Ivona@Ivona-BD7DFK2 MINGW64 ~/Desktop/SI_2022_lab1_183180 (master)
+$ git commmit -m 'Change quantity of item #2'
+git: 'commmit' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit
+
+Ivona@Ivona-BD7DFK2 MINGW64 ~/Desktop/SI_2022_lab1_183180 (master)
+$ git commit -m 'Change quantity of item #2'
+[master 158c61f] Change quantity of item #2
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Ivona@Ivona-BD7DFK2 MINGW64 ~/Desktop/SI_2022_lab1_183180 (master)
+$ git checkout branch1
+Switched to branch 'branch1'
+Your branch is ahead of 'origin/branch1' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Ivona@Ivona-BD7DFK2 MINGW64 ~/Desktop/SI_2022_lab1_183180 (branch1)
+$ git push -u origin branch1
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 326 bytes | 326.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/krstevaa/SI_2022_lab1_183180.git
+   9796e23..8a60183  branch1 -> branch1
+Branch 'branch1' set up to track remote branch 'branch1' from 'origin'.
+
+Ivona@Ivona-BD7DFK2 MINGW64 ~/Desktop/SI_2022_lab1_183180 (branch1)
+$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Ivona@Ivona-BD7DFK2 MINGW64 ~/Desktop/SI_2022_lab1_183180 (master)
+$ git push -u origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 354 bytes | 354.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/krstevaa/SI_2022_lab1_183180.git
+   9796e23..158c61f  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+Ivona@Ivona-BD7DFK2 MINGW64 ~/Desktop/SI_2022_lab1_183180 (master)
+$ git checkout branch2
+Switched to branch 'branch2'
+Your branch is up to date with 'origin/branch2'.
+
+Ivona@Ivona-BD7DFK2 MINGW64 ~/Desktop/SI_2022_lab1_183180 (branch2)
+$ git status
+On branch branch2
+Your branch is up to date with 'origin/branch2'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   shopping_list.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Ivona@Ivona-BD7DFK2 MINGW64 ~/Desktop/SI_2022_lab1_183180 (branch2)
+$ git add .
+
+Ivona@Ivona-BD7DFK2 MINGW64 ~/Desktop/SI_2022_lab1_183180 (branch2)
+$ git commit -m 'Modify item #4'
+[branch2 69fe9c6] Modify item #4
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Ivona@Ivona-BD7DFK2 MINGW64 ~/Desktop/SI_2022_lab1_183180 (branch2)
+$ git status
+On branch branch2
+Your branch is ahead of 'origin/branch2' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Ivona@Ivona-BD7DFK2 MINGW64 ~/Desktop/SI_2022_lab1_183180 (branch2)
+$ git log
+commit 69fe9c6e1598ff0d92eb911e4ef4e37953907cb0 (HEAD -> branch2)
+Author: Ivona Krsteva <krstevaaivona@yahoo.com>
+Date:   Fri Apr 1 18:26:17 2022 +0200
+
+    Modify item #4
+
+commit 9796e232d925f8912ab8ca89e87f17c563a9ac3a (origin/branch2)
+Author: Ivona Krsteva <krstevaaivona@yahoo.com>
+Date:   Fri Apr 1 18:21:23 2022 +0200
+
+    Add quantities to the items.
+
+commit 7539b38880634a24c0d1ee6a2cfb8d813f1d8e60
+Author: Ivona Krsteva <krstevaaivona@yahoo.com>
+Date:   Fri Apr 1 18:20:43 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 732ce3f94ae09490db41fa553eb1385662c248a3
+Author: krstevaa <82337314+krstevaa@users.noreply.github.com>
+Date:   Fri Apr 1 18:18:58 2022 +0200
+
+    Initial commit
+
+commit b52035b94c2690e5b34e3243df46a68f7da79bbe
+Author: krstevaa <82337314+krstevaa@users.noreply.github.com>
+Date:   Fri Apr 1 18:18:42 2022 +0200
+
+    Initial commit
+
+Ivona@Ivona-BD7DFK2 MINGW64 ~/Desktop/SI_2022_lab1_183180 (branch2)
+$ git add .
+
+Ivona@Ivona-BD7DFK2 MINGW64 ~/Desktop/SI_2022_lab1_183180 (branch2)
+$ commit --amend -m 'Modify item #4 and add item #6'
+bash: commit: command not found
+
+Ivona@Ivona-BD7DFK2 MINGW64 ~/Desktop/SI_2022_lab1_183180 (branch2)
+$ git commit --amend -m 'Modify item #4 and add item #6'
+[branch2 1c87f44] Modify item #4 and add item #6
+ Date: Fri Apr 1 18:26:17 2022 +0200
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+
+Ivona@Ivona-BD7DFK2 MINGW64 ~/Desktop/SI_2022_lab1_183180 (branch2)
+$ git push -u origin branch2
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 368 bytes | 368.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/krstevaa/SI_2022_lab1_183180.git
+   9796e23..1c87f44  branch2 -> branch2
+Branch 'branch2' set up to track remote branch 'branch2' from 'origin'.
+
+Ivona@Ivona-BD7DFK2 MINGW64 ~/Desktop/SI_2022_lab1_183180 (branch2)
+$ git log
+commit 1c87f446e77a100b5aadaf672a599d55b96ee4e6 (HEAD -> branch2, origin/branch2
+Author: Ivona Krsteva <krstevaaivona@yahoo.com>
+Date:   Fri Apr 1 18:26:17 2022 +0200
+
+    Modify item #4 and add item #6
+
+commit 9796e232d925f8912ab8ca89e87f17c563a9ac3a
+Author: Ivona Krsteva <krstevaaivona@yahoo.com>
+Date:   Fri Apr 1 18:21:23 2022 +0200
+
+    Add quantities to the items.
+
+commit 7539b38880634a24c0d1ee6a2cfb8d813f1d8e60
+Author: Ivona Krsteva <krstevaaivona@yahoo.com>
+Date:   Fri Apr 1 18:20:43 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 732ce3f94ae09490db41fa553eb1385662c248a3
+Author: krstevaa <82337314+krstevaa@users.noreply.github.com>
+Date:   Fri Apr 1 18:18:58 2022 +0200
+
+    Initial commit
+
+commit b52035b94c2690e5b34e3243df46a68f7da79bbe
+Author: krstevaa <82337314+krstevaa@users.noreply.github.com>
+Date:   Fri Apr 1 18:18:42 2022 +0200
+
+    Initial commit
+
+Ivona@Ivona-BD7DFK2 MINGW64 ~/Desktop/SI_2022_lab1_183180 (branch2)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+Ivona@Ivona-BD7DFK2 MINGW64 ~/Desktop/SI_2022_lab1_183180 (master)
+$ git merge branch1
+Auto-merging shopping_list.txt
+Merge made by the 'recursive' strategy.
+ shopping_list.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Ivona@Ivona-BD7DFK2 MINGW64 ~/Desktop/SI_2022_lab1_183180 (master)
+$ git merge branch2/master
+merge: branch2/master - not something we can merge
+
+Ivona@Ivona-BD7DFK2 MINGW64 ~/Desktop/SI_2022_lab1_183180 (master)
+$ git merge branch2
+Auto-merging shopping_list.txt
+CONFLICT (content): Merge conflict in shopping_list.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+Ivona@Ivona-BD7DFK2 MINGW64 ~/Desktop/SI_2022_lab1_183180 (master|MERGING)
+$ git merge --abort
+
+Ivona@Ivona-BD7DFK2 MINGW64 ~/Desktop/SI_2022_lab1_183180 (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Ivona@Ivona-BD7DFK2 MINGW64 ~/Desktop/SI_2022_lab1_183180 (master)
+$
